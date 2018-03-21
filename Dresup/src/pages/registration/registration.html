@@ -1,0 +1,44 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>registration</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form>
+    <ion-list>
+      <ion-item>
+        <ion-lable floating>First name</ion-lable>
+        <ion-input 
+        type="text" 
+        name="firstName">
+      </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-lable floating>Last name</ion-lable>
+        <ion-input 
+        type="text" 
+        ngmodel
+        name="lastName">
+      </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-lable floating>Email address</ion-lable>
+        <ion-input 
+        type="email" 
+        ngmodel 
+        name="email" 
+        required>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+    <button 
+    ion-button 
+    type="submit"
+    block>Submit</button>
+  </form>
+</ion-content>
