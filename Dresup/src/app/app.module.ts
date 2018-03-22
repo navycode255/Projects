@@ -13,6 +13,9 @@ import { HelpPage } from '../pages/help/help';
 import { NotificationsPage } from '../pages/notifications/notifications';
 import { TrendingPage } from '../pages/trending/trending';
 import { TabsPage } from '../pages/tabs/tabs';
+import { CreateAccountPage } from '../pages/create-account/create-account';
+import { LoginPage } from '../pages/login/login';
+
 
 
 @NgModule({
@@ -25,7 +28,9 @@ import { TabsPage } from '../pages/tabs/tabs';
     HelpPage,
     NotificationsPage,
     TrendingPage,
-    TabsPage
+    TabsPage,
+    CreateAccountPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +46,9 @@ import { TabsPage } from '../pages/tabs/tabs';
     HelpPage,
     NotificationsPage,
     TrendingPage,
-    TabsPage
+    TabsPage,
+    CreateAccountPage,
+    LoginPage
   ],
   providers: [
     StatusBar,

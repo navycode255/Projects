@@ -1,8 +1,8 @@
 import { Component } from "@angular/core";
 import { StylesPage } from "../styles/styles";
 import { BookmarkPage } from "../bookmark/bookmark";
-import { NotificationsPage } from "../notifications/notifications";
 import { HelpPage } from "../help/help";
+import { ContactsPage } from "../contacts/contacts";
 
 @Component({
     selector: 'page-tabs',
@@ -10,7 +10,7 @@ import { HelpPage } from "../help/help";
         <ion-tabs>
             <ion-tab [root]="stylesPage" tabIcon="star"></ion-tab>
             <ion-tab [root]="bookmarkPage" tabIcon="bookmarks"></ion-tab>
-            <ion-tab [root]="notificationsPage" tabIcon="bookmark"></ion-tab>
+            <ion-tab [root]="contactsPage" tabIcon="contacts"></ion-tab>
             <ion-tab [root]="helpPage" tabIcon="medkit"></ion-tab>
 
         </ion-tabs>
@@ -20,6 +20,6 @@ import { HelpPage } from "../help/help";
 export class TabsPage {
     stylesPage = StylesPage;
     bookmarkPage = BookmarkPage;
-    notificationsPage = NotificationsPage;
+    contactsPage = ContactsPage;
     helpPage = HelpPage;
 }
