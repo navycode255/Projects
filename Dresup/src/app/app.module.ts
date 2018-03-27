@@ -15,7 +15,12 @@ import { TrendingPage } from '../pages/trending/trending';
 import { TabsPage } from '../pages/tabs/tabs';
 import { CreateAccountPage } from '../pages/create-account/create-account';
 import { LoginPage } from '../pages/login/login';
-
+import { AlertsPage } from '../pages/alerts/alerts';
+import { MessagePage } from '../pages/message/message';
+import { ShopPage } from '../pages/shop/shop';
+import { AngularFireModule } from 'angularfire2';
+import { FIREBASE_CONFIG } from './firebase.credentials';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 
 @NgModule({
@@ -30,11 +35,16 @@ import { LoginPage } from '../pages/login/login';
     TrendingPage,
     TabsPage,
     CreateAccountPage,
-    LoginPage
+    LoginPage,
+    AlertsPage,
+    MessagePage,
+    ShopPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(FIREBASE_CONFIG),
+    AngularFireDatabaseModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -48,7 +58,10 @@ import { LoginPage } from '../pages/login/login';
     TrendingPage,
     TabsPage,
     CreateAccountPage,
-    LoginPage
+    LoginPage,
+    AlertsPage,
+    MessagePage,
+    ShopPage
   ],
   providers: [
     StatusBar,
