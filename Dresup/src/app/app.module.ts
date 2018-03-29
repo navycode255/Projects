@@ -21,6 +21,7 @@ import { ShopPage } from '../pages/shop/shop';
 import { AngularFireModule } from 'angularfire2';
 import { FIREBASE_CONFIG } from './firebase.credentials';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { CartPage } from '../pages/cart/cart';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     LoginPage,
     AlertsPage,
     MessagePage,
-    ShopPage
+    ShopPage,
+    CartPage
   ],
   imports: [
     BrowserModule,
@@ -61,7 +63,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     LoginPage,
     AlertsPage,
     MessagePage,
-    ShopPage
+    ShopPage,
+    CartPage
   ],
   providers: [
     StatusBar,
