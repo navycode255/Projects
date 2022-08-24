@@ -1,8 +1,0 @@
-{
-  "name": "Dresup",
-  "app_id": "d8f18901",
-  "type": "ionic-angular",
-  "integrations": {
-    "cordova": {}
-  }
-}
